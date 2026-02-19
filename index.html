@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Azure Web App Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            text-align: center;
+            padding-top: 100px;
+        }
+        h1 {
+            color: #0078D4;
+        }
+        .card {
+            background: white;
+            width: 400px;
+            margin: auto;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        button {
+            background-color: #0078D4;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #005A9E;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1>🚀 Azure Web App Demo</h1>
+        <p>This is a simple static web application deployed on Azure.</p>
+        <p>Hosted Successfully using Azure App Service.</p>
+        <button onclick="showMessage()">Click Me</button>
+        <p id="demo"></p>
+    </div>
+
+    <script>
+        function showMessage() {
+            document.getElementById("demo").innerHTML = "Deployment Successful! 🎉";
+        }
+    </script>
+
+</body>
+</html>
